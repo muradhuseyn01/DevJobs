@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs_Web_Api</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:wght@600&family=Courgette&family=Courier+Prime&family=Dancing+Script:wght@500&family=Indie+Flower&family=Kumbh+Sans&family=Lilita+One&family=Lobster&family=Outfit:wght@700&family=Raleway:wght@500&family=Roboto:ital,wght@0,400;0,700;1,300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="add__container">
+        <div class="container__title">
+
+            <div class="container__title-design">
+                <div id="trio-one"><img src="./assets/icons/Triangle Copy 2.svg" alt="triangle1"></div>
+                <div id="trio-two"><img src="./assets/icons/Triangle Copy-3.svg" alt="triangle2"></div>
+                <div id="trio-three"><img src="./assets/icons/Triangle.svg" alt="triangle3"></div>
+            </div>
+            <div class="container__title-up">
+                <div class="container__title-up-logo">
+                    <img src="./assets/icons/devjobs.svg" alt="Logo">
+                </div>
+
+                <div class="container__title-up-mode">
+                    <label for="chech"><img src="./assets/icons/Combined Shapesun.svg" alt="icon"></label>
+                    <input type="checkbox" id="chech">
+                    <label for="chech" class="mode-button"></label>
+                    <label for="chech"><img src="./assets/icons/Combined Shape.svg" alt="icon"></label>
+
+                </div>
+            </div>
+        </div>
+
+        <article id="add-header" class="container__title-job-header">
+            <h2>Added New Jobs</h2>
+        </article>
+
+        <form action="#" class="form__container" id="add-form">
+            <label for="title-id">Job Id:</label>
+            <input type="number" name="text" id="title-id" placeholder="Id" autocomplete="off">
+
+            <label for="title-head">Job Title:</label>
+            <input type="text" name="text" id="title-head" placeholder="Title" autocomplete="off">
+
+            <label for="title-company">Job Company:</label>
+            <input type="text" name="text" id="title-company" placeholder="Company" autocomplete="off">
+
+            <label for="title-img">Job Image:</label>
+            <input type="text" name="text" id="title-img" placeholder="Image Url" autocomplete="off">
+
+            <label for="title-work">Job Worktype:</label>
+            <select id="title-work">
+                <option>Full-time</option>
+                <option>Part-time</option>
+            </select>
+
+            <label for="title-location">Job Location:</label>
+            <input type="text" name="text" id="title-location" placeholder="location" autocomplete="off">
+            <!--lllllll-->
+
+            <label for="generate-site">GenerateData site:</label>
+            <input type="text" name="text" id="generate-site" placeholder="Site" autocomplete="off">
+
+            <label for="generate-info">GenerateData infoDetail:</label>
+            <input type="text" name="text" id="generate-info" placeholder="Info detail" autocomplete="off">
+
+            <label for="requirements-info">Requirements information:</label>
+            <input type="text" name="text" id="requirements-info" placeholder="Requirements info" autocomplete="off">
+
+            <label for="requirements-list-id">Requirements ListID:</label>
+            <input type="text" name="text" id="requirements-list-id" placeholder="Requirements list ID"
+                autocomplete="off">
+
+            <span>Requirements list text</span>
+            <textarea name="text" id="requirements-list-text" style="resize: none;" cols="5" rows="10"
+                placeholder="Requirements list in the future?"></textarea>
+
+            <label for="what-do-info">What You Will Do Information:</label>
+            <input type="text" name="text" id="what-do-info" placeholder="What Will You Do info" autocomplete="off">
+
+            <label for="what-do-list-id">What You Will Do ListID:</label>
+            <input type="text" name="text" id="what-do-list-id" placeholder="What You Will Do list ID"
+                autocomplete="off">
+
+            <span>What You Will Do Lists text</span>
+            <textarea name="what-do-list-text" id="what-do-list-text" style="resize: none;" cols="5" rows="10"
+                placeholder="What you will do in the future?"></textarea>
+
+
+            <div class="form__container-footer">
+                <a href="./index.html" class="form-footer-btn">Cancel</a>
+                <button class="form-footer-btn-add" type="submit">Add Job</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>

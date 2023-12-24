@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJobs_Web_Api</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin:wght@600&family=Courgette&family=Courier+Prime&family=Dancing+Script:wght@500&family=Indie+Flower&family=Kumbh+Sans&family=Lilita+One&family=Lobster&family=Outfit:wght@700&family=Raleway:wght@500&family=Roboto:ital,wght@0,400;0,700;1,300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="container">
+
+        <div class="container__title">
+
+            <div class="container__title-design">
+                <div id="trio-one"><img src="./assets/icons/Triangle Copy 2.svg" alt="triangle1"></div>
+                <div id="trio-two"><img src="./assets/icons/Triangle Copy-3.svg" alt="triangle2"></div>
+                <div id="trio-three"><img src="./assets/icons/Triangle.svg" alt="triangle3"></div>
+            </div>
+            <div class="container__title-up">
+                <div class="container__title-up-logo">
+                    <img src="./assets/icons/devjobs.svg" alt="Logo">
+                </div>
+
+                <div class="container__title-up-mode">
+                    <label for="chech"><img src="./assets/icons/Combined Shapesun.svg" alt="icon"></label>
+                    <input type="checkbox" id="chech">
+                    <label for="chech" class="mode-button"></label>
+                    <label for="chech"><img src="./assets/icons/Combined Shape.svg" alt="icon"></label>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </header>
+
+    <article class="container__title-search">
+
+        <div class="container__title-search-filter">
+            <img src="./assets/icons/003-search 2.svg" alt="icon" id="hide-search2">
+            <input type="text" name="text" id="search-input" placeholder="Filter by title, companies, expertise…">
+            <img src="./assets/icons/filter-icon.svg" alt="icon" id="hide-filter">
+            <img src="./assets/icons/search-blue.svg" alt="icon" id="hide-search1">
+        </div>
+
+        <div class="container__title-search-location">
+            <img src="./assets/icons/location.svg" alt="icon">
+            <input type="text" name="text" id="location-input" class="location-input" placeholder="Filter by location…">
+        </div>
+
+        <div class="container__title-search-checkbox">
+            <div class="container__title-search-check">
+                <input type="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox"> <span>Full Time Only</span></label>
+            </div>
+
+            <div class="container__title-search-button">
+                <button class="searchInClick">Search</button>
+            </div>
+        </div>
+        
+    </article>
+    <div id="noresult-err"></div>
+
+    <aside class="filter__responsive hide-aside">
+        <div class="filter__responsive-location">
+            <img src="./assets/icons/location.svg" alt="icon">
+            <input type="text" name="text" id="location-in" placeholder="Filter by location…" class="location-input-2">
+        </div>
+        <div class="filter__responsive-fulltime">
+            <input type="checkbox" id="time" class="checkbox-2">
+            <label for="time"> <span>Full Time Only</span></label>
+        </div>
+        <div class="filter__responsive-btn">
+            <button class="filterBtn">Search</button>
+        </div>
+    </aside>
+
+    <main class="job__cards ">
+        <!-- <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 1.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>5h ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Full Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Senior Software Engineer</h3>
+                    <p>Scoot</p>
+                    <span>United Kingdom</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 2.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>20h ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Haskell and PureScript Dev</h3>
+                    <p>Haskell and PureScript Dev</p>
+                    <span>United States</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 3.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>1dg ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Midlevel Back End Engineer</h3>
+                    <p>Vector</p>
+                    <span>Russia</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 4.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>2dg ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Full Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Senior Application Engineer</h3>
+                    <p>Office Lite</p>
+                    <span>Japan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 5.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>2dg ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Remote DevOps Engineer</h3>
+                    <p>Pod</p>
+                    <span>Thailand</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 6.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>4dg ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Desktop Support Manager</h3>
+                    <p>Creative</p>
+                    <span>Germany</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 7.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>1w ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Full Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>iOS Engineer</h3>
+                    <p>Pomodoro</p>
+                    <span>United States</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 8.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>1w ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Full Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Senior EJB Developer</h3>
+                    <p>Maker</p>
+                    <span>United Kingdom</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 9.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>1w ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Senior Frontend Developer</h3>
+                    <p>Coffeeroasters</p>
+                    <span>Singapore</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 10.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>2w ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Freelance</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>App & Website Designer</h3>
+                    <p>Mastercraft</p>
+                    <span>United States</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 11.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>1mo ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Fullstack Developer</h3>
+                    <p>Crowdfund</p>
+                    <span>New Zealand</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="job__cards-card">
+            <div class="job__cards-card-img">
+                <img src="./assets/images/Group 12.svg" alt="photo-icon">
+            </div>
+            <div class="job__cards-card-info">
+                <div class="job__cards-card-time">
+                    <p>4dg ago</p>
+                    <div class="card-time-span"></div>
+                    <p>Part Time</p>
+                </div>
+                <div class="job__cards-card-details">
+                    <h3>Technical Lead Engineer</h3>
+                    <p>Typemaster</p>
+                    <span>United Kingdom</span>
+                </div>
+            </div>
+        </div>-->
+
+    </main>
+    <div class="job__cards-btn">
+        <button><a href="./add-job.html">Add Data</a></button>
+    </div>
+    <script src="./javascript/app.js"></script>
+</body>
+
+</html>
